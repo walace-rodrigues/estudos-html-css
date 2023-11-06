@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de Hover</title>
+    <style>
+        div{
+            background-color: azure;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        p{
+            display: none;
+        }
+        div:hover{
+            background-color: blue;
+            display: block;
+        }
+        div:hover > h2 {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>O texto abaixo deverá sumir e aparecer outro quando passar o mouse por cima</h1>
+    <div>
+        <h2>Passe o mouse aqui</h2>
+        <p>Texto escondido</p>
+    </div>
+</body>
+</html>
