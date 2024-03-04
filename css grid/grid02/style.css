@@ -1,0 +1,54 @@
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.container {
+   height: 500px;
+   width: 500px;
+   display: grid;
+   grid-template-areas: 
+   "a a a a    a a a a   a a a a"
+   "b b b b    b b b b   c c c c"
+   "b b b b    b b b b   c c c c"
+   ;
+
+   grid-gap: 10px;
+}
+
+
+.box-1 {
+   grid-area: a;
+   background-color: aqua;
+}
+.box-2 {
+   grid-area: b;
+   background-color: aqua;
+}
+.box-3 {
+   grid-area: c;
+   background-color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+   .container{
+      grid-template-areas: 
+   "a a a a    a a a a   a a a a"
+   "a a a a    a a a a   a a a a"
+   "a a a a    a a a a   a a a a"
+   "a a a a    a a a a   a a a a"
+
+   "b b b b    b b b b   b b b b"
+   "b b b b    b b b b   b b b b"
+   "b b b b    b b b b   b b b b"
+   "b b b b    b b b b   b b b b"
+   "b b b b    b b b b   b b b b"
+   "b b b b    b b b b   b b b b"
+
+   "c c c c    c c c c   c c c c"
+   "c c c c    c c c c   c c c c"
+   ;
+   }
+}
